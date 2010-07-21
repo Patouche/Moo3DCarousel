@@ -1,8 +1,8 @@
-Class Name
+Moo3DCarousel
 ========
-petit résumé rapide
+Create easily a 3D Carousel
 
-![Screenshot](http://github.com/subhaze/mootools-external-favicon/raw/master/logo.png)
+![Screenshot](http://github.com/Patouche/Moo3DCarousel/raw/master/logo.png)
 
 How to use
 ----------
@@ -25,11 +25,10 @@ How to use
 		moo3DCarousel3.addElement(el);
 	});
 
-### Demo
+### Demo & Documentation
 
-[www.farkess.com](http://farkess.com/~patouche/)
-
-### Documentation
+[Demo](http://www.farkess.com/~patouche/tuto-mootools/carrousel-3d/)
+[Documentation](http://www.farkess.com/~patouche/tuto-mootools/carrousel-3d/doc.html)
 
 
 Changelog:
