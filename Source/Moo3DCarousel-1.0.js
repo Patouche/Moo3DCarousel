@@ -106,6 +106,14 @@ var Moo3DCarousel = new Class({
 	_currentIndex: 0,
 
 	/**
+	 * Index of the last image focused
+	 * L'index de l'image mise en avant précédente
+	 *
+	 * @var int
+	 */
+	_lastIndex: -1,
+
+	/**
 	 * Elipse center
 	 * Le centre de l'ellipse
 	 *
@@ -399,10 +407,12 @@ var Moo3DCarousel = new Class({
 
 		this.init();
 
-		// Nous refinissons notre l'index de l'image mise en avant
-		this._currentIndex = index % this._elements.length;
-
 		var l = this._elements.length;
+
+		// On garde sous la main l'index de l'image précédente
+		this._lastIndex = this._currentIndex;
+		// Nous refinissons notre l'index de l'image mise en avant
+		this._currentIndex = ( index + l ) % l;
 
 		// On déplace tous les éléments avec des transitions
 		for ( var i=0; i<l; i++ ) {
@@ -456,6 +466,13 @@ var Moo3DCarousel = new Class({
 	 */
 	toElement: function() {
 		return this._container;
+	},
+
+	getLastFocused: function() {
+		if ( this._lastIndex < 0 )
+			return null;
+		var l =  this._elements.length;
+		return this._elements[ ((this._lastIndex + l) % l) ];
 	},
 
 	getFocused: function() {
