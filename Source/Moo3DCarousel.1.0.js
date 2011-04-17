@@ -216,8 +216,8 @@ var Moo3DCarousel = new Class({
 		size = size || {};
 
 		// Puis on récupère la taille de l'image.
-		size.x = size.x || imgEl.getProperty('width').toInt() || el.getSize().x;
-		size.y = size.y || imgEl.getProperty('height').toInt() || el.getSize().y;
+		size.x = size.x || imgEl.getProperty('width').toInt() || imgEl.getSize().x;
+		size.y = size.y || imgEl.getProperty('height').toInt() || imgEl.getSize().y;
 
 		// On stocke cette taille sur l'élément.
 		elem.store("Moo3DCarousel:size", size);
