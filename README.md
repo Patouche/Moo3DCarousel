@@ -27,8 +27,8 @@ How to use
 
 ### Demo & Documentation
 
-[Demo](http://www.farkess.com/~patouche/tuto-mootools/carrousel-3d/)
-[Documentation](http://www.farkess.com/~patouche/tuto-mootools/carrousel-3d/doc.html)
+[Demo](http://patouche.farkess.com/tuto/tuto-mootools/carrousel-3d/)
+[Documentation](http://patouche.farkess.com/tuto/tuto-mootools/carrousel-3d/doc.html)
 
 
 Changelog:
